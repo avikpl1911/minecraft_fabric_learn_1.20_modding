@@ -1,5 +1,6 @@
 package net.avik.mccourse;
 
+import net.avik.mccourse.block.ModBlocks;
 import net.avik.mccourse.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -21,7 +22,7 @@ public class MCCourse implements ModInitializer {
 		// Proceed with mild caution.
 
 		ModItems.registerModItems();
-
+		ModBlocks.registerModBlocks();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

@@ -1,6 +1,7 @@
 package net.avik.mccourse.item;
 
 import net.avik.mccourse.MCCourse;
+import net.avik.mccourse.block.ModBlocks;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -23,6 +24,8 @@ public class ModItems {
     public static void itemGroupIngredients(FabricItemGroupEntries entries){
         entries.add(PINK_GARNET);
         entries.add(RAW_PINK_GARNET);
+        entries.add(ModBlocks.PINK_GARNET_BLOCK);
+        entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
     }
     public static void registerModItems(){
         MCCourse.LOGGER.info("Registering Mod Items for" + MCCourse.MOD_ID);
